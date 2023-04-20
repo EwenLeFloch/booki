@@ -23,7 +23,7 @@
 	<body>
 		<div class="main-container">
 			<header>
-				<div>
+				<div class="container-logo">
 					<img
 						class="navigation-logo"
 						src="images/logo/Booki.png"
@@ -31,15 +31,15 @@
 					/>
 				</div>
 				<ul class="navigation">
-					<li class="navigation__item">
+					<li class="navigation-item">
 						<a
 							href="#hebergements-and-populaires"
-							class="navigation__item__link"
+							class="navigation-link"
 							>Hébergements</a
 						>
 					</li>
-					<li class="navigation__item">
-						<a href="#activities" class="navigation__item__link"
+					<li class="navigation-item">
+						<a href="#activities" class="navigation-link"
 							>Activités</a
 						>
 					</li>
@@ -47,47 +47,60 @@
 			</header>
 			<main>
 				<section class="info">
-					<h2 class="info__title section-title">
+					<h2 class="info-title section-title">
 						Trouvez votre hébergement des vacances de rêve
 					</h2>
 					<p class="info-text">
 						En plein centre ville ou en pleine nature
 					</p>
-					<form class="info__form">
-						<label class="info__search__label">
+					<form class="info-form">
+						<label class="info-label">
 							<i class="fa-solid fa-location-dot"></i>
 						</label>
 						<input
-							class="info__search"
+							class="info-search"
 							type="search"
 							placeholder="Marseille, France"
 						/>
 						<input
-							class="info__submit"
+							class="info-submit"
 							type="submit"
 							value="Rechercher"
 						/>
+						<div class="info-submit-sr">
+							<i class="fa-solid fa-search"></i>
+						</div>
 					</form>
 					<div class="filter-bar">
 						<h3 class="filter-title">Filtres</h3>
-						<button class="filter-button">
-							<i
-								class="fa-solid fa-money-bill-wave filter-icon"
-							></i>
-							<em>Économique</em>
-						</button>
-						<button class="filter-button">
-							<i class="fa-solid fa-child filter-icon"></i>
-							<em>Familial</em>
-						</button>
-						<button class="filter-button">
-							<i class="fa-solid fa-heart filter-icon"></i>
-							<em>Romantique</em>
-						</button>
-						<button class="filter-button">
-							<i class="fa-solid fa-fire filter-icon"></i>
-							<em>Nos pépites</em>
-						</button>
+						<div class="filter-content">
+							<div class="filter-sr">
+								<button class="filter-button">
+									<i
+										class="fa-solid fa-money-bill-wave filter-icon"
+									></i>
+									<em class="button-text">Économique</em>
+								</button>
+								<button class="filter-button">
+									<i
+										class="fa-solid fa-child filter-icon"
+									></i>
+									<em class="button-text">Familial</em>
+								</button>
+							</div>
+							<div class="filter-sr">
+								<button class="filter-button">
+									<i
+										class="fa-solid fa-heart filter-icon"
+									></i>
+									<em class="button-text">Romantique</em>
+								</button>
+								<button class="filter-button">
+									<i class="fa-solid fa-fire filter-icon"></i>
+									<em class="button-text">Nos pépites</em>
+								</button>
+							</div>
+						</div>
 					</div>
 					<p class="info-text info-bar">
 						<i class="fa-solid fa-info"></i>Plus de 500 logements
@@ -98,7 +111,7 @@
 					<section class="hebergements">
 						<h2 class="section-title">Hébergements à Marseille</h2>
 						<div class="hebergements-cards">
-							<article class="card">
+							<article class="card hebergements-card">
 								<a class="card-link" href="#">
 									<img
 										src="images/hebergements/fred-kleber.jpg"
@@ -141,7 +154,7 @@
 									</div>
 								</a>
 							</article>
-							<article class="card">
+							<article class="card hebergements-card">
 								<a class="card-link" href="#">
 									<img
 										src="images/hebergements/febrian-zakaria.jpg"
@@ -184,7 +197,7 @@
 									</div>
 								</a>
 							</article>
-							<article class="card">
+							<article class="card hebergements-card">
 								<a class="card-link" href="#">
 									<img
 										src="images/hebergements/reisetopia.jpg"
@@ -227,7 +240,7 @@
 									</div>
 								</a>
 							</article>
-							<article class="card">
+							<article class="card hebergements-card">
 								<a class="card-link" href="#">
 									<img
 										src="images/hebergements/annie-spratt.jpg"
@@ -270,7 +283,7 @@
 									</div>
 								</a>
 							</article>
-							<article class="card">
+							<article class="card hebergements-card">
 								<a class="card-link" href="#">
 									<img
 										src="images/hebergements/marcus-loke.jpg"
@@ -313,7 +326,7 @@
 									</div>
 								</a>
 							</article>
-							<article class="card">
+							<article class="card hebergements-card">
 								<a class="card-link" href="#">
 									<img
 										src="images/hebergements/nicate-lee.jpg"
@@ -513,7 +526,7 @@
 					</section>
 				</div>
 				<section id="activities">
-					<h2 class="activities-title">Activités à Marseille</h2>
+					<h2 class="section-title">Activités à Marseille</h2>
 					<div class="activities-cards">
 						<article class="card">
 							<a class="card-link" href="#">
