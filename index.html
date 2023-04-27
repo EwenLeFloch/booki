@@ -30,20 +30,20 @@
 						alt="Logo de l'entreprise"
 					/>
 				</div>
-				<ul class="navigation">
-					<li class="navigation-item">
+				<nav class="navigation">
+					<div class="navigation-item">
 						<a
 							href="#hebergements-and-populaires"
 							class="navigation-link"
 							>Hébergements</a
 						>
-					</li>
-					<li class="navigation-item">
+					</div>
+					<div class="navigation-item">
 						<a href="#activities" class="navigation-link"
 							>Activités</a
 						>
-					</li>
-				</ul>
+					</div>
+				</nav>
 			</header>
 			<main>
 				<section class="info">
@@ -54,10 +54,11 @@
 						En plein centre ville ou en pleine nature
 					</p>
 					<form class="info-form">
-						<label class="info-label">
+						<div class="info-label">
 							<i class="fa-solid fa-location-dot"></i>
-						</label>
+						</div>
 						<input
+							aria-label="search"
 							class="info-search"
 							type="search"
 							placeholder="Marseille, France"
@@ -72,7 +73,7 @@
 						</div>
 					</form>
 					<div class="filter-bar">
-						<h3 class="filter-title">Filtres</h3>
+						<b class="filter-title">Filtres</b>
 						<div class="filter-content">
 							<div class="filter-sr">
 								<button class="filter-button">
@@ -292,7 +293,8 @@
 									<div class="card-content">
 										<div class="card-text">
 											<h3 class="card-title">
-												Auberge La Canebière
+												Auberge
+												<span>La Canebière</span>
 											</h3>
 											<p class="card-subtitle">
 												Nuit à partir de 25<span
@@ -581,28 +583,22 @@
 			</main>
 			<footer>
 				<section class="footer-section">
-					<h3 class="footer-title">À propos</h3>
-					<p class="footer-text">
-						<a href="#">Fonctionnement du site</a>
-					</p>
-					<p class="footer-text">
-						<a href="#">Conditions générales</a>
-					</p>
-					<p class="footer-text">
-						<a href="#">Données et confidentialité</a>
-					</p>
+					<h4 class="footer-title">À propos</h4>
+					<a class="footer-text" href="#">Fonctionnement du site</a>
+					<a class="footer-text" href="#">Conditions générales</a>
+					<a class="footer-text" href="#"
+						>Données et confidentialité</a
+					>
 				</section>
 				<section class="footer-section">
-					<h3 class="footer-title">Nos hébergements</h3>
-					<p class="footer-text"><a href="#">Charte qualité</a></p>
-					<p class="footer-text">
-						<a href="#">Proposez votre hôtel</a>
-					</p>
+					<h4 class="footer-title">Nos hébergements</h4>
+					<a class="footer-text" href="#">Charte qualité</a>
+					<a class="footer-text" href="#">Proposez votre hôtel</a>
 				</section>
 				<section class="footer-section">
-					<h3 class="footer-title">Assistance</h3>
-					<p class="footer-text"><a href="#">Centre d'aide</a></p>
-					<p class="footer-text"><a href="#">Nous contacter</a></p>
+					<h4 class="footer-title">Assistance</h4>
+					<a class="footer-text" href="#">Centre d'aide</a>
+					<a class="footer-text" href="#">Nous contacter</a>
 				</section>
 			</footer>
 		</div>
