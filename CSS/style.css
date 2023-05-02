@@ -27,7 +27,7 @@
 	opacity: 1;
 }
 
-body .fa-solid {
+.fa-solid {
 	color: var(--main-color);
 }
 
